@@ -32,7 +32,7 @@ function verifyPassword(password) {
 }
 
 function verifyUserName(username) {
-  if (username.length > 7) {
+  if (username.length > 8) {
     return true;
   }
   return false;
