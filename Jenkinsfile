@@ -9,7 +9,8 @@ pipeline {
         }
         stage('Buid') {
             steps {
-                echo 'Building'
+                echo 'Building this application'
+                sh 'npm install'
             }
         }
         stage('Deploy') {
@@ -19,7 +20,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo 'Testing'
+                echo 'npm test'
             }
         }
         stage('Release') {
